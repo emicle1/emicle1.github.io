@@ -1,47 +1,23 @@
 <html>
-<input type="text" id="userInput"/>
-<button onclick="test()">Submit</button>
+<form>
+    <input type="text" value="Enter Your Nickname" id="nameBox">
+    <input type="button" value="Go!" id="submit" onClick="putCookie">
+<form>
+
+
 <script>
-function setCookie(cname,cvalue,exdays)
-{
-var d = new Date();
-d.setTime(d.getTime()+(exdays*24*60*60*1000));
-var expires = "expires="+d.toGMTString();
-document.cookie = cname+"="+cvalue+"; "+expires;
-}
+    var today = new Date();
+    var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
 
-function getCookie(cname)
-{
-var name = cname + "=";
-var ca = document.cookie.split(';');
-for(var i=0; i<ca.length; i++) 
-  {
-  var c = ca[i].trim();
-  if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-  }
-return "";
-}
-
-function checkCookie()
-{
-var user=getCookie("username");
-if (user!="")
-  {
-  window.location.href ="emicle1.github.io" 
-  }
-else 
-  {
-  if (user!="" && user!=null)
-    {
-    setCookie("username",user,30);
+    function setCookie(name, value){
+        document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
     }
-  }
-}
-function test()
-        {
-            var userInput = document.getElementById("userInput").value;
-            setCookie("username",userInput,30);
-            checkCookie();
-        }
+    //this should set the UserName cookie to the proper value;
+    function storeValues(form){
+        setCookie("userName", form.submit.value);
+        return true;
+    }
+
 </script>
+</body>
 </html>
