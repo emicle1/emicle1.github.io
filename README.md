@@ -1,4 +1,6 @@
 <html>
+<input type="text" id="userInput"/>
+<button onclick="test()">Submit</button>
 <script>
 function setCookie(cname,cvalue,exdays)
 {
