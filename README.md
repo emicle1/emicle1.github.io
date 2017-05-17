@@ -35,5 +35,11 @@ else
     }
   }
 }
+function test()
+        {
+            var userInput = document.getElementById("userInput").value;
+            setCookie("username",userInput,30);
+            checkCookie();
+        }
 </script>
 </html>
