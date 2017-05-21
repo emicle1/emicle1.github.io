@@ -1,5 +1,6 @@
 <center>☢Welcome☢</center>
 <center>✔This is my Website that I made✔</center>
+<style>
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
