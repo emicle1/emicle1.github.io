@@ -1,3 +1,2 @@
-<center>☢Welcome☢</center>
-<center>✔This is my Website that I made✔</center>
-<input type="button" value="Click Me!" style="text-align: center; background-color: black; color: #FFFFFF; border: none; ">
+<a href="" download>Download osu!</a>
+<p>This is so if you can't access osu.ppy.sh at school or work, you can download it here.</p>
