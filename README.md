@@ -2,3 +2,8 @@
 <input type="submit" name="Submit">
 <br>
 <p>This is a random website I made at school.</p>
+<script>
+  .enterText onclick{
+    alert("Hello")  
+}
+</script>
