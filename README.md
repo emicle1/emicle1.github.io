@@ -3,7 +3,7 @@
 <br>
 <p>This is a random website I made at school.</p>
 <script>
-  .enterText onclick{
+  .Submit onclick{
     alert("Hello")  
 }
 </script>
