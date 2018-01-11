@@ -1,9 +1,2 @@
-<input type="text" title="Enter Anything" class="enterText">
-<input type="submit" name="Submit">
-<br>
-<p>This is a random website I made at school.</p>
-<script>
-  .Submit onclick{
-    alert("Hello")  
-}
-</script>
+<center>This is a random website I made with my stuff on it.</center>
+
